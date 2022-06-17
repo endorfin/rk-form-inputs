@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * input-tags
+ */
+.ui-input-tags {
+  @apply border border-black p-1 space-x-1 space-y-1 flex flex-wrap items-baseline;
+}
+
+.ui-input-tags__tag {
+  @apply border-0 bg-black text-white rounded py-1 px-2 text-sm inline-flex gap-2 items-center justify-center;
+}
+
+.ui-input-tags__tag--marked-for-delete {
+  @apply bg-red-500;
+}
+
+.ui-input-tags__input {
+  @apply border-0 flex-1;
+}
+
+.ui-input-tags__input:focus {
+  @apply outline-none;
+}

@@ -1,5 +1,5 @@
 {
-  "name": "rk-form-inputs",
+  "name": "@rene.kersten/rk-form-inputs",
   "version": "1.0.1",
   "description": "",
   "main": "dist/rk-form-inputs.ssr.js",

@@ -1,7 +1,7 @@
 <script>
 import Vue from 'vue'
 // Uncomment import and local "components" registration if library is not registered globally.
-import { InputTags, InputText } from '@/entry.esm'
+import { InputTags, InputText, InputTextarea } from '@/entry.esm'
 import '../dist/styles.css'
 
 export default Vue.extend({
@@ -9,12 +9,14 @@ export default Vue.extend({
 
   components: {
     InputTags,
-    InputText
+    InputText,
+    InputTextarea
   },
 
   data() {
     return {
-      inputValue: '',
+      inputTextValue: '',
+      inputTextareaValue: '',
       tags: [],
     }
   },
@@ -25,13 +27,24 @@ export default Vue.extend({
   <div id="app" class="container mx-auto">
     <h2 class="text-2xl mt-8 mb-4">#input-text</h2>
     <p>
-      value: {{ inputValue }}
+      value: {{ inputTextValue }}
     </p>
     <input-text
       id="name"
-      v-model="inputValue"
+      v-model="inputTextValue"
       label="Name"
       hint="example hint"
+      required
+    />
+
+    <h2 class="text-2xl mt-8 mb-4">#input-textarea</h2>
+    <p>
+      value: {{ inputTextareaValue }}
+    </p>
+    <input-textarea
+      id="description"
+      v-model="inputTextareaValue"
+      label="Description"
       required
     />
 

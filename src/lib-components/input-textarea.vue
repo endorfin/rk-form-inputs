@@ -20,6 +20,7 @@
         :aria-describedby="ariaDescribedby"
         :aria-invalid="isInvalid"
         :placeholder="placeholder"
+        :readonly="readonly"
         :class="inputClass"
         @input="$emit('input', $event.target.value)"
       />
@@ -45,6 +46,10 @@ export default {
     placeholder: {
       type: String,
       default: ''
+    },
+    readonly: {
+      type: Boolean,
+      default: () => false
     },
     focus: {
       type: Boolean,

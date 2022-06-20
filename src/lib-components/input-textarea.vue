@@ -21,6 +21,8 @@
         :aria-invalid="isInvalid"
         :placeholder="placeholder"
         :readonly="readonly"
+        :rows="rows"
+        :cols="cols"
         :class="inputClass"
         @input="$emit('input', $event.target.value)"
       />
@@ -46,6 +48,14 @@ export default {
     placeholder: {
       type: String,
       default: ''
+    },
+    rows: {
+      type: Number,
+      default: 5
+    },
+    cols: {
+      type: Number,
+      default: 80
     },
     readonly: {
       type: Boolean,

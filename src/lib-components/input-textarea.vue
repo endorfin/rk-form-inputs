@@ -55,11 +55,11 @@ export default {
   computed: {
     inputClass () {
       return {
-        'ui-input-text': true,
-        'ui-input-text--disabled': this.disabled,
-        'ui-input-text--success': this.fieldStyle === 'success',
-        'ui-input-text--warning': this.fieldStyle === 'warning',
-        'ui-input-text--error': this.isInvalid || this.fieldStyle === 'error'
+        'ui-input-textarea': true,
+        'ui-input-textarea--disabled': this.disabled,
+        'ui-input-textarea--success': this.fieldStyle === 'success',
+        'ui-input-textarea--warning': this.fieldStyle === 'warning',
+        'ui-input-textarea--error': this.isInvalid || this.fieldStyle === 'error'
       }
     },
 

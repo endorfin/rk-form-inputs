@@ -1,6 +1,6 @@
 {
   "name": "@rene.kersten/rk-form-inputs",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/rk-form-inputs.ssr.js",
   "browser": "dist/rk-form-inputs.esm.js",
